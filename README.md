@@ -7,7 +7,7 @@ A collection of beginner C projects built while learning the fundamentals of pro
 This repository contains small projects that helped me practice core C concepts like file I/O, control flow, memory management, and user input handling. Each project focuses on building something functional while reinforcing specific programming concepts.
 
 ## Projects
-### 2. Number Guessing Game
+### 1. Number Guessing Game
 A simple guessing game where the computer picks a random number and you try to guess it.
 
 **Features:**
