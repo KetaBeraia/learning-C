@@ -38,12 +38,7 @@ gcc guessing_game.c -o guessing_game
 - Build problem-solving skills
 - Write clean, readable code
 
-## Future Projects
 
-- Text file encryption tool
-- Expense tracker
-- Word counter/text analyzer
-- Password vault
 
 ## Notes
 
