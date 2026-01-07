@@ -1,64 +1,66 @@
 # Small C Projects
 
-A collection of beginner C projects built while learning the fundamentals of programming in C.
+A collection of small, terminal-based projects written in C while learning core programming fundamentals.
+
+These projects are intentionally simple. The focus is on correctness, clarity, and understanding low-level concepts rather than visual polish or advanced abstractions.
+
+---
 
 ## Purpose
 
-This repository contains small projects that helped me practice core C concepts like file I/O, control flow, memory management, and user input handling. Each project focuses on building something functional while reinforcing specific programming concepts.
+This repository exists to practice and solidify:
+- Core C syntax and control flow
+- Working with strings and arrays
+- Input validation and error handling
+- Program structure and modular design
+- Problem-solving through small, complete programs
+
+Each project is self-contained and designed to reinforce specific concepts.
+
+---
 
 ## Projects
+
 ### 1. Number Guessing Game
-A simple guessing game where the computer picks a random number and you try to guess it.
+A simple terminal game where the computer selects a random number and the player attempts to guess it.
 
 **Features:**
-- Random number generation (1-100)
-- Feedback on each guess (too high/too low)
+- Random number generation (1–100)
+- Feedback on guesses (too high / too low)
 - Tracks number of attempts
-- *(Leaderboard coming soon)*
 
 **Concepts practiced:**
 - Random number generation
 - Loops and conditionals
-- Input validation
+- Input handling
 - Basic game logic
+  ### 2. Hangman Game
+A terminal-based implementation of the classic Hangman game written in C.
+
+The program randomly selects a word, and the player attempts to guess it one letter at a time before running out of allowed mistakes.
+
+**Features:**
+- Random word selection
+- Letter-by-letter guessing
+- Tracks incorrect guesses
+- Prevents repeated letter inputs
+- Displays current progress of the word
+
+**Concepts practiced:**
+- Character arrays and strings
+- Loops and conditional logic
+- Functions and modular program design
+- Input validation
+- Game state tracking
 
 **How to run:**
-```bash
+```bash 
 gcc guessing_game.c -o guessing_game
 ./guessing_game
-```
 
----
-
-## Learning Goals
-
-- Master C syntax and fundamentals
-- Understand memory management
-- Practice file operations
-- Build problem-solving skills
-- Write clean, readable code
+gcc hangman.c -o hangman
+./hangman
 
 
 
-## Notes
 
-These projects are simple by design. The focus is on learning core concepts correctly rather than building complex applications. Code may not be optimized or follow advanced patterns—that's intentional as I'm still building foundations.
-
-## Requirements
-
-- GCC compiler
-- Linux/Unix environment (or WSL on Windows)
-- Basic terminal knowledge
-
-## Compilation
-
-All projects can be compiled with:
-```bash
-gcc filename.c -o outputname
-```
-
-No external libraries required (only standard C library).
-
----
-
-*Learning C one project at a time.*
