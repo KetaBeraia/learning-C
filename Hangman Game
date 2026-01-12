@@ -1,1 +1,13 @@
-
+void display(const Game *game, const char *guess){
+    int wg = game->wg;
+    system("cls"); // clear screen in Windows
+    printf(" ┏━━━┓\n");
+    printf(" ┃   │\n");
+    printf(" ┃   %c\n", wg < 1 ? ' ' : 'O');
+    printf(" ┃  %c%s%c\n", wg < 3 ? ' ' : '/', wg < 2 ? " " : "│", wg < 4 ? ' ' : '\\');
+    printf(" ┃  %c %c\n", wg < 5 ? ' ' : '/', wg < 6 ? ' ' : '\\');
+    printf(" ┃\n");
+    printf("┏┻━━━━━━┓\n┃       ┗━┓\n┗━━━━━━━━━┛\n");
+    printf("wrong guesses %d: %s\n", wg, game->ws);
+    printf("word: %s\n", guess);
+}
