@@ -1,3 +1,5 @@
+#include <stdlio.h>
+
 void display(const Game *game, const char *guess){
     int wg = game->wg;
     system("cls"); // clear screen in Windows
