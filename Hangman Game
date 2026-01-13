@@ -2,7 +2,7 @@
 
 void display(const Game *game, const char *guess){
     int wg = game->wg;
-    system("cls"); // clear screen in Windows
+    system("cls");
     printf(" ┏━━━┓\n");
     printf(" ┃   │\n");
     printf(" ┃   %c\n", wg < 1 ? ' ' : 'O');
