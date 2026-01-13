@@ -34,7 +34,7 @@ A simple terminal game where the computer selects a random number and the player
 - Loops and conditionals
 - Input handling
 - Basic game logic
-  ### 2. Hangman Game
+### 2. Hangman Game
 A terminal-based implementation of the classic Hangman game written in C.
 
 The program randomly selects a word, and the player attempts to guess it one letter at a time before running out of allowed mistakes.
