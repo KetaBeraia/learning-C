@@ -1,13 +1,14 @@
 #include <stdio.h>
 
+#define RIGHT 555
+
 void guessNumber(int guess) {
-    // TODO: write your code here
-    if (guess < 555) {
+    if (guess < RIGHT) {
         printf("Your guess is too low.\n");
-    } else if (guess > 555) {
+    } else if (guess > RIGHT) {
         printf("Your guess is too high.\n");
     } else {
-        printf("Correct. You guessed it!\n");
+        printf("You guessed it!\n");
     }
 }
 
@@ -15,4 +16,6 @@ int main() {
     guessNumber(500);
     guessNumber(600);
     guessNumber(555);
+    
+    return 0;
 }
