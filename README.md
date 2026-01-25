@@ -1,6 +1,6 @@
 # Small C Projects
 
-A collection of small, terminal-based projects written in C while learning core programming fundamentals.
+A collection of small, terminal-based programs written in C to practice core programming fundamentals.
 
 These projects are intentionally simple. The focus is on correctness, clarity, and understanding low-level concepts rather than visual polish or advanced abstractions.
 
@@ -10,34 +10,39 @@ These projects are intentionally simple. The focus is on correctness, clarity, a
 
 This repository exists to practice and solidify:
 - Core C syntax and control flow
-- Working with strings and arrays
+- Working with arrays and strings
+- Loops (`for`, `while`)
 - Input validation and error handling
-- Program structure and modular design
+- Program structure and basic logic
 - Problem-solving through small, complete programs
 
-Each project is self-contained and designed to reinforce specific concepts.
+Each project is self-contained and targets a specific concept.
 
 ---
 
 ## Projects
 
 ### 1. Number Guessing Game
-A simple terminal game where the computer selects a random number and the player attempts to guess it.
+A terminal game where the computer selects a random number and the player attempts to guess it.
 
 **Features:**
 - Random number generation (1–100)
 - Feedback on guesses (too high / too low)
+- Input validation
 - Tracks number of attempts
 
 **Concepts practiced:**
-- Random number generation
+- `rand()` and `srand()`
 - Loops and conditionals
-- Input handling
+- User input handling
 - Basic game logic
-### 2. Hangman Game
-A terminal-based implementation of the classic Hangman game written in C.
 
-The program randomly selects a word, and the player attempts to guess it one letter at a time before running out of allowed mistakes.
+---
+
+### 2. Hangman Game
+A terminal-based implementation of the classic Hangman game.
+
+The program randomly selects a word, and the player guesses it letter by letter before running out of allowed mistakes.
 
 **Features:**
 - Random word selection
@@ -48,19 +53,58 @@ The program randomly selects a word, and the player attempts to guess it one let
 
 **Concepts practiced:**
 - Character arrays and strings
+- Functions and modular design
 - Loops and conditional logic
-- Functions and modular program design
 - Input validation
 - Game state tracking
 
-**How to run:**
-```bash 
-gcc guessing_game.c -o guessing_game
-./guessing_game
+---
 
-gcc hangman.c -o hangman
-./hangman
+### 3. Number Comparison Logic
+A program where the user repeatedly guesses a randomly generated number until the correct value is entered.
 
+**Concepts practiced:**
+- Comparison operators
+- Loop control (`break`, `continue`)
+- Input validation with `scanf`
+- Clearing input buffers
 
+---
 
+### 4. Factorial Calculation
+A program that calculates the factorial of 10 using an array and a loop.
+
+**Concepts practiced:**
+- Arrays
+- `for` loops
+- Accumulator variables
+- Basic mathematical logic
+
+---
+
+### 5. Average Marks Program
+A program that calculates the average marks for multiple subjects using a 2D array.
+
+**Concepts practiced:**
+- Two-dimensional arrays
+- Nested loops
+- Floating-point arithmetic
+- Structured data processing
+
+---
+
+### 6. While Loop Control Example
+A small program demonstrating `while` loop behavior with `break` and `continue`.
+
+**Concepts practiced:**
+- `while` loops
+- Conditional branching
+- Loop interruption logic
+- Understanding control flow behavior
+
+---
+
+## How to Run
+
+Compile and run any program using `gcc`:
 
